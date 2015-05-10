@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>men hu</title>
+<link rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+<body>
+  <div class="top">
+    <div class="top-inner cf">
+      <span class="top-logo"></span>
+      <p class="top-info">
+        <a href="javascript:;">所长信箱</a>
+        <a href="javascript:;">书记信箱</a>
+        <a class="last" href="javascript:;">网站地图</a>
+      </p>
+    </div>
+  </div>
+  <div class="nav">
+    <ul class="cf">
+      <li><a class="cur" href="javascript:;">首页</a></li>
+      <li><a class="" href="javascript:;">单位概况</a></li>
+      <li><a class="" href="javascript:;">卫生监督</a></li>
+      <li><a class="" href="javascript:;">疾病控制</a></li>
+      <li><a class="" href="javascript:;">科研教育</a></li>
+      <li><a class="" href="javascript:;">法规标准</a></li>
+      <li><a class="" href="javascript:;">大事记</a></li>
+      <li class="last"><a  href="javascript:;">练习我们</a></li>
+    </ul>
+  </div>
+  <div class="main">
+    <div class="notice-content notice-detail-centent cf">
+      <div class="notice-left">
+        <img src="./img/notice-left.png">
+        <span></span>
+      </div>
+      <div class="notice-right notice-detail-right">
+        <h3 class="small-title">通知公告</h3>
+        <h1 class="big-title">教育部怎么怎么样</h1>
+        <p class="date">日期：2014-9-9&nbsp;浏览：100</p>
+        <div class="con">NBA进入季后赛，各队之间的拼杀已经进入白热化，东部半决赛公牛和骑士的对决堪称经典，在大比分1-1的局势下，公牛队主场投中压哨3分，将大比分改写成2-1，赢得主动，面对压哨的结局，詹姆斯也无力回天。</div>
+        <div class="btn"><button>关闭窗口</button></div>
+      </div>
+    </div>
+
+
+ 
+    <!-- 友情链接 -->
+    <p class="friend-link">友情链接：<a href="">西安铁路局</a><a href="">中国铁路客户服务中心12306</a></p>
+  </div>
+  <div class="footer">
+    <p>西安铁路局疾病预防控制中心 陕ICP备06072704</p>
+    <p>总访问量：2464455 今日访问量：2455</p>
+  </div>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script type="text/javascript">
+$('.banner-ul > li').click(function(){
+  var $this = $(this);
+  $this.addClass('cur').siblings().removeClass('cur');
+  $('#' + $this.parent().attr('data-img-id')).attr('src', $this.attr('data-src'));
+  $('#' + $this.parent().attr('data-title-id')).html($this.attr('data-title'));
+});
+</script>
+</body>
+</html>
